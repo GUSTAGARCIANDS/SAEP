@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cadastro — LojaRoupas</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header">
+  <div class="wrap">
+    <a class="brand" href="index.html"><div class="logo">LR</div>LojaRoupas</a>
+    <nav class="navlinks">
+      <a href="produto.html">Produtos</a>
+      <a href="cadastro.html">Cadastrar</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <div class="card-form">
+    <h2>Crie sua conta</h2>
+    <p style="color:var(--muted)">Informe seus dados para começar a comprar.</p>
+    <form id="formCadastro">
+      <div class="field">
+        <label>Nome</label>
+        <input class="input" name="nome" required>
+      </div>
+      <div class="field">
+        <label>Email</label>
+        <input class="input" name="email" type="email" required>
+      </div>
+      <div class="field">
+        <label>Senha</label>
+        <input class="input" name="senha" type="password" required>
+      </div>
+      <div style="display:flex;gap:10px;justify-content:flex-end">
+        <button class="btn" type="submit">Cadastrar</button>
+      </div>
+    </form>
+    <div id="msg" style="margin-top:10px;color:crimson"></div>
+  </div>
+</main>
+
+<footer class="footer">Contato: suporte@lojaroupas.com</footer>
+<script src="js/auth.js"></script>
+</body>
+</html>
